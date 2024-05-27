@@ -1,18 +1,69 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Box, Container, Flex, Heading, Text, VStack, Image } from "@chakra-ui/react";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
-      </VStack>
+    <Container maxW="container.xl" p={4}>
+      <Box as="header" bg="gray.800" color="white" py={4} mb={8}>
+        <Heading as="h1" size="xl" textAlign="center">
+          Financial Times
+        </Heading>
+      </Box>
+      <Flex direction={{ base: "column", md: "row" }} gap={8}>
+        <Box flex="3">
+          <Heading as="h2" size="lg" mb={4}>
+            Main News
+          </Heading>
+          <VStack spacing={4} align="stretch">
+            <Box p={4} shadow="md" borderWidth="1px">
+              <Heading as="h3" size="md" mb={2}>
+                Headline 1
+              </Heading>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+              </Text>
+            </Box>
+            <Box p={4} shadow="md" borderWidth="1px">
+              <Heading as="h3" size="md" mb={2}>
+                Headline 2
+              </Heading>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+              </Text>
+            </Box>
+            <Box p={4} shadow="md" borderWidth="1px">
+              <Heading as="h3" size="md" mb={2}>
+                Headline 3
+              </Heading>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+              </Text>
+            </Box>
+          </VStack>
+        </Box>
+        <Box flex="1" bg="gray.50" p={4} shadow="md" borderWidth="1px">
+          <Heading as="h2" size="lg" mb={4}>
+            Sidebar
+          </Heading>
+          <VStack spacing={4} align="stretch">
+            <Box>
+              <Heading as="h3" size="md" mb={2}>
+                Additional Content 1
+              </Heading>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+              </Text>
+            </Box>
+            <Box>
+              <Heading as="h3" size="md" mb={2}>
+                Additional Content 2
+              </Heading>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+              </Text>
+            </Box>
+          </VStack>
+        </Box>
+      </Flex>
     </Container>
   );
 };
