@@ -3,7 +3,7 @@ import { Box, Container, Flex, Heading, Text, VStack, Image } from "@chakra-ui/r
 const Index = () => {
   return (
     <Container maxW="container.xl" p={4}>
-      <Box as="header" bg="gray.800" color="white" py={4} mb={8}>
+      <Box as="header" bg="#fff1e5" color="black" py={4} mb={8}>
         <Heading as="h1" size="xl" textAlign="center">
           Financial Times
         </Heading>
@@ -40,7 +40,7 @@ const Index = () => {
             </Box>
           </VStack>
         </Box>
-        <Box flex="1" bg="gray.50" p={4} shadow="md" borderWidth="1px">
+        <Box flex="1" bg="#fff1e5" p={4} shadow="md" borderWidth="1px">
           <Heading as="h2" size="lg" mb={4}>
             Sidebar
           </Heading>
